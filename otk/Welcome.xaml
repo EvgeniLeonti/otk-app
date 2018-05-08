@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="otk.Welcome"
+             ControlTemplate="{StaticResource MainPageTemplate}"
+             Title="Welcome">
+
+    <StackLayout BackgroundColor="#FFFFFF"
+                 VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <Entry WidthRequest="200" x:Name="Username" VerticalOptions="FillAndExpand" Text="Username"  Margin="10" />
+        <Entry WidthRequest="200" x:Name="Password" VerticalOptions="FillAndExpand" Text="Password" Margin="10" />
+        <Button x:Name="Login" Text="Login" Margin="10" Clicked="OnLoginClicked" />
+
+    </StackLayout>
+
+</ContentPage>
