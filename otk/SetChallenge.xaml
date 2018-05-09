@@ -16,17 +16,68 @@
                            IsVisible="False"
                            IsEnabled="True" />
         <StackLayout Grid.Row="0" BackgroundColor="AntiqueWhite" Padding="30,15,30,15">
-            <Label TextColor="#000000" Text="Here you can set and change your challenge. Select one of the challenges below and click on them to proceed." />
+            <Label TextColor="#000000"
+                   Text="Here you can set and change your challenge. Select one of the challenges below and click on them to proceed." />
         </StackLayout>
         <StackLayout Grid.Row="1" BackgroundColor="#FFFFFF" Padding="30,30,30,30"
                      VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
 
-            <Label Font="Bold" TextColor="#000000" Text="Secret Code Challenge" Margin="0,15,0,0"/>
-            <Entry WidthRequest="200" x:Name="Challenge1Input" VerticalOptions="FillAndExpand" Text="Enter your code"  Margin="10" />
+            <Label Font="Bold" TextColor="#000000" Text="Secret Code Challenge" Margin="0,15,0,0" />
+            <Entry WidthRequest="200" x:Name="Challenge1Input" VerticalOptions="FillAndExpand" Text="Enter your code"
+                   Margin="10" />
             <Button x:Name="Insert1" Text="Insert" Margin="10" Clicked="Challenge1Clicked" />
 
-            <Label Font="Bold" TextColor="#000000" Text="Secret Table Challenge" Margin="0,15,0,0"/>
-            <Entry WidthRequest="200" x:Name="Challenge2Input" VerticalOptions="FillAndExpand" Text="Enter your matrix"  Margin="10" />
+            <!-- TODO: Make this matrix clickable and send proper input to DB -->
+            <Label Font="Bold" TextColor="#000000" Text="Secret Table Challenge" Margin="0,30,0,0" />
+                <StackLayout HorizontalOptions="Center">
+                    <Frame OutlineColor="Black" Padding="0,0,0,0">
+                    <Grid BackgroundColor="Black" ColumnSpacing="1" RowSpacing="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition Width="50" />
+                        </Grid.ColumnDefinitions>
+                        <BoxView Color="#000000" Grid.Row="0" Grid.Column="0" />
+                        <BoxView Color="#000000" Grid.Row="0" Grid.Column="1" />
+                        <BoxView Color="#000000" Grid.Row="0" Grid.Column="2" />
+
+                        <BoxView Color="#FFFFFF" Grid.Row="1" Grid.Column="0" />
+                        <BoxView Color="#000000" Grid.Row="1" Grid.Column="1" />
+                        <BoxView Color="#FFFFFF" Grid.Row="1" Grid.Column="2" />
+
+                        <BoxView Color="#FFFFFF" Grid.Row="2" Grid.Column="0" />
+                        <BoxView Color="#000000" Grid.Row="2" Grid.Column="1" />
+                        <BoxView Color="#FFFFFF" Grid.Row="2" Grid.Column="2" />
+                    </Grid>
+                    </Frame>
+            </StackLayout>
+            
+
+
+            <!-- <Grid> -->
+            <!--     <Grid.RowDefinitions> -->
+            <!--         <RowDefinition Height="2*" /> -->
+            <!--         <RowDefinition Height="*" /> -->
+            <!--     </Grid.RowDefinitions> -->
+            <!--     <Grid.ColumnDefinitions> -->
+            <!--         <ColumnDefinition Width="75" /> -->
+            <!--         <ColumnDefinition Width="*" /> -->
+            <!--     </Grid.ColumnDefinitions> -->
+            <!--     <BoxView Color="#FF3399" Grid.Column="0" Grid.RowSpan="2"/> -->
+            <!--     <BoxView Color="Gray" Grid.Column="1" Grid.RowSpan="2"/> -->
+            <!--     <Label Text = "1" FontSize="24" TextColor="#FFFFFF"  Grid.Column="0" Grid.RowSpan="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" /> -->
+            <!--     <Label Text = "2" FontSize="18" TextColor="#FF3399" Grid.Column="1" Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/> -->
+            <!--     <Label Text = "3" TextColor="#FFFFFF" Grid.Column="1" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/> -->
+            <!-- </Grid> -->
+
+
+            <Entry WidthRequest="200" x:Name="Challenge2Input" VerticalOptions="FillAndExpand" Text="Enter your matrix"
+                   Margin="10" />
             <Button x:Name="Insert2" Text="Insert" Margin="10" Clicked="Challenge2Clicked" />
 
         </StackLayout>
