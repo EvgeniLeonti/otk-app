@@ -20,11 +20,14 @@
         </StackLayout>
         <StackLayout Grid.Row="1" BackgroundColor="#FFFFFF" Padding="30,30,30,30"
                      VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-            <Label TextColor="#000000" Text="TODO: Display a list/whatever of challenges here." />
 
-            <Label TextColor="#000000" Text="Example for DB interaction:" />
-            <Entry WidthRequest="200" x:Name="challenge" VerticalOptions="FillAndExpand" Text="input here"  Margin="10" />
-            <Button x:Name="Insert" Text="Insert" Margin="10" Clicked="OnInsertClicked" />
+            <Label Font="Bold" TextColor="#000000" Text="Secret Code Challenge" Margin="0,15,0,0"/>
+            <Entry WidthRequest="200" x:Name="Challenge1Input" VerticalOptions="FillAndExpand" Text="Enter your code"  Margin="10" />
+            <Button x:Name="Insert1" Text="Insert" Margin="10" Clicked="Challenge1Clicked" />
+
+            <Label Font="Bold" TextColor="#000000" Text="Secret Table Challenge" Margin="0,15,0,0"/>
+            <Entry WidthRequest="200" x:Name="Challenge2Input" VerticalOptions="FillAndExpand" Text="Enter your matrix"  Margin="10" />
+            <Button x:Name="Insert2" Text="Insert" Margin="10" Clicked="Challenge2Clicked" />
 
         </StackLayout>
 

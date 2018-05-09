@@ -13,12 +13,12 @@ namespace otk
     {
         static DBManager defaultInstance = new DBManager();
         MobileServiceClient client;
-        IMobileServiceTable<String> table;
+        IMobileServiceTable<UserItem> table;
 
         private DBManager()
         {
             this.client = new MobileServiceClient(Constants.ApplicationURL);
-            this.table = client.GetTable<String>();
+            this.table = client.GetTable<UserItem>();
         }
 
         public static DBManager DefaultManager
@@ -38,14 +38,14 @@ namespace otk
             get { return client; }
         }
 
-        public async Task<ObservableCollection<String>> GetData(bool syncItems = false)
+        public async Task<ObservableCollection<UserItem>> GetData(bool syncItems = false)
         {
             try
             {
-                IEnumerable<String> items = await table
+                IEnumerable<UserItem> items = await table
                     .ToEnumerableAsync();
 
-                return new ObservableCollection<String>(items);
+                return new ObservableCollection<UserItem>(items);
             }
             catch (MobileServiceInvalidOperationException msioe)
             {
@@ -58,7 +58,7 @@ namespace otk
             return null;
         }
 
-        public async Task SaveData(String item)
+        public async Task SaveData(UserItem item)
         {
             await table.InsertAsync(item);
         }
