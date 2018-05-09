@@ -29,51 +29,33 @@
 
             <!-- TODO: Make this matrix clickable and send proper input to DB -->
             <Label Font="Bold" TextColor="#000000" Text="Secret Table Challenge" Margin="0,30,0,0" />
-                <StackLayout HorizontalOptions="Center">
-                    <Frame OutlineColor="Black" Padding="0,0,0,0">
-                    <Grid BackgroundColor="Black" ColumnSpacing="1" RowSpacing="1">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*" />
-                            <RowDefinition Height="*" />
-                            <RowDefinition Height="*" />
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="50" />
-                            <ColumnDefinition Width="50" />
-                            <ColumnDefinition Width="50" />
-                        </Grid.ColumnDefinitions>
-                        <BoxView Color="#000000" Grid.Row="0" Grid.Column="0" />
-                        <BoxView Color="#000000" Grid.Row="0" Grid.Column="1" />
-                        <BoxView Color="#000000" Grid.Row="0" Grid.Column="2" />
-
-                        <BoxView Color="#FFFFFF" Grid.Row="1" Grid.Column="0" />
-                        <BoxView Color="#000000" Grid.Row="1" Grid.Column="1" />
-                        <BoxView Color="#FFFFFF" Grid.Row="1" Grid.Column="2" />
-
-                        <BoxView Color="#FFFFFF" Grid.Row="2" Grid.Column="0" />
-                        <BoxView Color="#000000" Grid.Row="2" Grid.Column="1" />
-                        <BoxView Color="#FFFFFF" Grid.Row="2" Grid.Column="2" />
-                    </Grid>
-                    </Frame>
+            <StackLayout x:Name="Challenge2InputMatrix" HorizontalOptions="Center">
+                    <!-- <Frame OutlineColor="Black" Padding="0,0,0,0"> -->
+                    <!-- <Grid x:Name="Matrix" BackgroundColor="Black" ColumnSpacing="1" RowSpacing="1"> -->
+                    <!-- <Grid.RowDefinitions> -->
+                    <!-- <RowDefinition Height="*" /> -->
+                    <!-- <RowDefinition Height="*" /> -->
+                    <!-- <RowDefinition Height="*" /> -->
+                    <!-- </Grid.RowDefinitions> -->
+                    <!-- <Grid.ColumnDefinitions> -->
+                    <!-- <ColumnDefinition Width="50" /> -->
+                    <!-- <ColumnDefinition Width="50" /> -->
+                    <!-- <ColumnDefinition Width="50" /> -->
+                    <!-- </Grid.ColumnDefinitions> -->
+                    <!-- <BoxView x:Name="cell1" Color="#000000" Grid.Row="0" Grid.Column="0" /> -->
+                    <!-- <BoxView x:Name="cell2" Color="#000000" Grid.Row="0" Grid.Column="1" /> -->
+                    <!-- <BoxView x:Name="cell3" Color="#000000" Grid.Row="0" Grid.Column="2" /> -->
+                    <!-- <BoxView Color="#FFFFFF" Grid.Row="1" Grid.Column="0" /> -->
+                    <!-- <BoxView Color="#000000" Grid.Row="1" Grid.Column="1" /> -->
+                    <!-- <BoxView Color="#FFFFFF" Grid.Row="1" Grid.Column="2" /> -->
+                    <!-- <BoxView Color="#FFFFFF" Grid.Row="2" Grid.Column="0" /> -->
+                    <!-- <BoxView Color="#000000" Grid.Row="2" Grid.Column="1" /> -->
+                    <!-- <BoxView Color="#FFFFFF" Grid.Row="2" Grid.Column="2" /> -->
+                    <!-- </Grid> -->
+                    <!-- </Frame> -->
             </StackLayout>
             
 
-
-            <!-- <Grid> -->
-            <!--     <Grid.RowDefinitions> -->
-            <!--         <RowDefinition Height="2*" /> -->
-            <!--         <RowDefinition Height="*" /> -->
-            <!--     </Grid.RowDefinitions> -->
-            <!--     <Grid.ColumnDefinitions> -->
-            <!--         <ColumnDefinition Width="75" /> -->
-            <!--         <ColumnDefinition Width="*" /> -->
-            <!--     </Grid.ColumnDefinitions> -->
-            <!--     <BoxView Color="#FF3399" Grid.Column="0" Grid.RowSpan="2"/> -->
-            <!--     <BoxView Color="Gray" Grid.Column="1" Grid.RowSpan="2"/> -->
-            <!--     <Label Text = "1" FontSize="24" TextColor="#FFFFFF"  Grid.Column="0" Grid.RowSpan="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" /> -->
-            <!--     <Label Text = "2" FontSize="18" TextColor="#FF3399" Grid.Column="1" Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/> -->
-            <!--     <Label Text = "3" TextColor="#FFFFFF" Grid.Column="1" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/> -->
-            <!-- </Grid> -->
 
 
             <Entry WidthRequest="200" x:Name="Challenge2Input" VerticalOptions="FillAndExpand" Text="Enter your matrix"
