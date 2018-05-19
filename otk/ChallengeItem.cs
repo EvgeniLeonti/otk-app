@@ -1,36 +1,23 @@
-﻿using System;
-using Microsoft.WindowsAzure.MobileServices;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
 
 namespace otk
 {
     public class UserItem
     {
-        string id;
-        string userName;
-        string challengeData;
-
         [JsonProperty(PropertyName = "id")]
-        public string Id
-        {
-            get { return id; }
-            set { id = value; }
-        }
+        public string Id { get; set; }
 
-        [JsonProperty(PropertyName = "userName")]
-        public string UserName
-        {
-            get { return userName; }
-            set { userName = value; }
-        }
+        [JsonProperty(PropertyName = "userId")]
+        public int UserId { get; set; }
 
-        [JsonProperty(PropertyName = "challengeData")]
-        public string ChallengeData
-        {
-            get { return challengeData; }
-            set { challengeData = value; }
-        }
+        [JsonProperty(PropertyName = "challenge1")]
+        public string Challenge1 { get; set; }
+
+        [JsonProperty(PropertyName = "challenge2")]
+        public string Challenge2 { get; set; }
+
+        [JsonProperty(PropertyName = "challenge3")]
+        public string Challenge3 { get; set; }
     }
 }
 

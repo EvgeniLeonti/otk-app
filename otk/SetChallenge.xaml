@@ -22,45 +22,21 @@
         <StackLayout Grid.Row="1" BackgroundColor="#FFFFFF" Padding="30,30,30,30"
                      VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
 
-            <Label Font="Bold" TextColor="#000000" Text="Secret Code Challenge" Margin="0,15,0,0" />
+            <!-- Challenge 1 Layout Section -->
+            <Label Font="Bold" TextColor="#000000" Text="Secret Code Challenge" Margin="0,30,0,0" />
             <Entry WidthRequest="200" x:Name="Challenge1Input" VerticalOptions="FillAndExpand" Text="Enter your code"
-                   Margin="10" />
+                   Margin="5" />
             <Button x:Name="Insert1" Text="Insert" Margin="10" Clicked="Challenge1Clicked" />
 
-            <!-- TODO: Make this matrix clickable and send proper input to DB -->
+
+            <!-- Challenge 2 Layout Section -->
             <Label Font="Bold" TextColor="#000000" Text="Secret Table Challenge" Margin="0,30,0,0" />
             <StackLayout x:Name="Challenge2InputMatrix" HorizontalOptions="Center">
-                    <!-- <Frame OutlineColor="Black" Padding="0,0,0,0"> -->
-                    <!-- <Grid x:Name="Matrix" BackgroundColor="Black" ColumnSpacing="1" RowSpacing="1"> -->
-                    <!-- <Grid.RowDefinitions> -->
-                    <!-- <RowDefinition Height="*" /> -->
-                    <!-- <RowDefinition Height="*" /> -->
-                    <!-- <RowDefinition Height="*" /> -->
-                    <!-- </Grid.RowDefinitions> -->
-                    <!-- <Grid.ColumnDefinitions> -->
-                    <!-- <ColumnDefinition Width="50" /> -->
-                    <!-- <ColumnDefinition Width="50" /> -->
-                    <!-- <ColumnDefinition Width="50" /> -->
-                    <!-- </Grid.ColumnDefinitions> -->
-                    <!-- <BoxView x:Name="cell1" Color="#000000" Grid.Row="0" Grid.Column="0" /> -->
-                    <!-- <BoxView x:Name="cell2" Color="#000000" Grid.Row="0" Grid.Column="1" /> -->
-                    <!-- <BoxView x:Name="cell3" Color="#000000" Grid.Row="0" Grid.Column="2" /> -->
-                    <!-- <BoxView Color="#FFFFFF" Grid.Row="1" Grid.Column="0" /> -->
-                    <!-- <BoxView Color="#000000" Grid.Row="1" Grid.Column="1" /> -->
-                    <!-- <BoxView Color="#FFFFFF" Grid.Row="1" Grid.Column="2" /> -->
-                    <!-- <BoxView Color="#FFFFFF" Grid.Row="2" Grid.Column="0" /> -->
-                    <!-- <BoxView Color="#000000" Grid.Row="2" Grid.Column="1" /> -->
-                    <!-- <BoxView Color="#FFFFFF" Grid.Row="2" Grid.Column="2" /> -->
-                    <!-- </Grid> -->
-                    <!-- </Frame> -->
+                <!-- Content (grid) is added dynammically -->
             </StackLayout>
-            
-
-
-
             <Entry WidthRequest="200" x:Name="Challenge2Input" VerticalOptions="FillAndExpand" Text="Enter your matrix"
-                   Margin="10" />
-            <Button x:Name="Insert2" Text="Insert" Margin="10" Clicked="Challenge2Clicked" />
+                   Margin="5" />
+            <Button x:Name="Insert2" Text="Set / Update" Margin="10" Clicked="Challenge2Clicked" />
 
         </StackLayout>
 
