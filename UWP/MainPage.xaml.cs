@@ -28,7 +28,7 @@ namespace UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new otk.App());
+            LoadApplication(new opentheknock.App());
         }
     }
 }

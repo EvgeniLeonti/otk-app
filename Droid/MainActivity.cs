@@ -13,9 +13,9 @@ using Microsoft.WindowsAzure.MobileServices;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
-namespace otk.Droid
+namespace opentheknock.Droid
 {
-	[Activity (Label = "otk.Droid",
+	[Activity (Label = "opentheknock.Droid",
 		Icon = "@drawable/icon",
 		MainLauncher = true,
 		ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,

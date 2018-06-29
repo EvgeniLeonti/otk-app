@@ -11,7 +11,7 @@ using Microsoft.WindowsAzure.MobileServices;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
-namespace otk.iOS
+namespace opentheknock.iOS
 {
 	[Register ("AppDelegate")]
 	public partial class AppDelegate : FormsApplicationDelegate

@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("otk.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("opentheknock.Droid.Resource", IsApplication=true)]
 
-namespace otk.Droid
+namespace opentheknock.Droid
 {
 	
 	
@@ -26,16 +26,16 @@ namespace otk.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Auth._MobileServices.Resource.Animation.slide_in_right = global::otk.Droid.Resource.Animation.slide_in_right;
-			global::Xamarin.Auth._MobileServices.Resource.Animation.slide_out_left = global::otk.Droid.Resource.Animation.slide_out_left;
-			global::Xamarin.Auth._MobileServices.Resource.Drawable.ic_arrow_back = global::otk.Droid.Resource.Drawable.ic_arrow_back;
-			global::Xamarin.Auth._MobileServices.Resource.Id.webview = global::otk.Droid.Resource.Id.webview;
-			global::Xamarin.Auth._MobileServices.Resource.Layout.activity_webview = global::otk.Droid.Resource.Layout.activity_webview;
-			global::Xamarin.Auth._MobileServices.Resource.String.ApplicationName = global::otk.Droid.Resource.String.ApplicationName;
-			global::Xamarin.Auth._MobileServices.Resource.String.Hello = global::otk.Droid.Resource.String.Hello;
-			global::Xamarin.Auth._MobileServices.Resource.String.title_activity_webview = global::otk.Droid.Resource.String.title_activity_webview;
-			global::PCLCrypto.Resource.String.ApplicationName = global::otk.Droid.Resource.String.ApplicationName;
-			global::PCLCrypto.Resource.String.Hello = global::otk.Droid.Resource.String.Hello;
+			global::Xamarin.Auth._MobileServices.Resource.Animation.slide_in_right = global::opentheknock.Droid.Resource.Animation.slide_in_right;
+			global::Xamarin.Auth._MobileServices.Resource.Animation.slide_out_left = global::opentheknock.Droid.Resource.Animation.slide_out_left;
+			global::Xamarin.Auth._MobileServices.Resource.Drawable.ic_arrow_back = global::opentheknock.Droid.Resource.Drawable.ic_arrow_back;
+			global::Xamarin.Auth._MobileServices.Resource.Id.webview = global::opentheknock.Droid.Resource.Id.webview;
+			global::Xamarin.Auth._MobileServices.Resource.Layout.activity_webview = global::opentheknock.Droid.Resource.Layout.activity_webview;
+			global::Xamarin.Auth._MobileServices.Resource.String.ApplicationName = global::opentheknock.Droid.Resource.String.ApplicationName;
+			global::Xamarin.Auth._MobileServices.Resource.String.Hello = global::opentheknock.Droid.Resource.String.Hello;
+			global::Xamarin.Auth._MobileServices.Resource.String.title_activity_webview = global::opentheknock.Droid.Resource.String.title_activity_webview;
+			global::PCLCrypto.Resource.String.ApplicationName = global::opentheknock.Droid.Resource.String.ApplicationName;
+			global::PCLCrypto.Resource.String.Hello = global::opentheknock.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Animation

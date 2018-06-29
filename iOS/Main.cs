@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace otk.iOS
+namespace opentheknock.iOS
 {
 	public class Application
 	{
